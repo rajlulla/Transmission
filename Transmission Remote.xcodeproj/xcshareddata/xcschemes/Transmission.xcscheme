@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "251229382B51C1AE0079D047"
-               BuildableName = "Transmission.app"
-               BlueprintName = "Transmission"
-               ReferencedContainer = "container:Transmission.xcodeproj">
+               BuildableName = "Transmission Remote.app"
+               BlueprintName = "Transmission Remote"
+               ReferencedContainer = "container:Transmission Remote.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,9 +35,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "251229492B51C1B00079D047"
-               BuildableName = "TransmissionTests.xctest"
-               BlueprintName = "TransmissionTests"
-               ReferencedContainer = "container:Transmission.xcodeproj">
+               BuildableName = "Transmission RemoteTests.xctest"
+               BlueprintName = "Transmission RemoteTests"
+               ReferencedContainer = "container:Transmission Remote.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -46,9 +46,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "251229532B51C1B00079D047"
-               BuildableName = "TransmissionUITests.xctest"
-               BlueprintName = "TransmissionUITests"
-               ReferencedContainer = "container:Transmission.xcodeproj">
+               BuildableName = "Transmission RemoteUITests.xctest"
+               BlueprintName = "Transmission RemoteUITests"
+               ReferencedContainer = "container:Transmission Remote.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -68,9 +68,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "251229382B51C1AE0079D047"
-            BuildableName = "Transmission.app"
-            BlueprintName = "Transmission"
-            ReferencedContainer = "container:Transmission.xcodeproj">
+            BuildableName = "Transmission Remote.app"
+            BlueprintName = "Transmission Remote"
+            ReferencedContainer = "container:Transmission Remote.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "251229382B51C1AE0079D047"
-            BuildableName = "Transmission.app"
-            BlueprintName = "Transmission"
-            ReferencedContainer = "container:Transmission.xcodeproj">
+            BuildableName = "Transmission Remote.app"
+            BlueprintName = "Transmission Remote"
+            ReferencedContainer = "container:Transmission Remote.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
