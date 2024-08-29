@@ -44,14 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		251229392B51C1AE0079D047 /* Transmission Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Transmission Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		251229392B51C1AE0079D047 /* Transmission.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transmission.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2512293C2B51C1AE0079D047 /* TransmissionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransmissionApp.swift; sourceTree = "<group>"; };
 		251229402B51C1B00079D047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		251229422B51C1B00079D047 /* Transmission.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Transmission.entitlements; sourceTree = "<group>"; };
 		251229442B51C1B00079D047 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2512294A2B51C1B00079D047 /* Transmission RemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Transmission RemoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2512294A2B51C1B00079D047 /* TransmissionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransmissionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2512294E2B51C1B00079D047 /* TransmissionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransmissionTests.swift; sourceTree = "<group>"; };
-		251229542B51C1B00079D047 /* Transmission RemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Transmission RemoteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		251229542B51C1B00079D047 /* TransmissionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransmissionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		251229582B51C1B00079D047 /* TransmissionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransmissionUITests.swift; sourceTree = "<group>"; };
 		2512295A2B51C1B00079D047 /* TransmissionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransmissionUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		251229672B51C1F40079D047 /* TorrentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorrentListView.swift; sourceTree = "<group>"; };
@@ -105,9 +105,9 @@
 		2512293A2B51C1AE0079D047 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				251229392B51C1AE0079D047 /* Transmission Remote.app */,
-				2512294A2B51C1B00079D047 /* Transmission RemoteTests.xctest */,
-				251229542B51C1B00079D047 /* Transmission RemoteUITests.xctest */,
+				251229392B51C1AE0079D047 /* Transmission.app */,
+				2512294A2B51C1B00079D047 /* TransmissionTests.xctest */,
+				251229542B51C1B00079D047 /* TransmissionUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,9 +217,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		251229382B51C1AE0079D047 /* Transmission Remote */ = {
+		251229382B51C1AE0079D047 /* Transmission */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2512295E2B51C1B00079D047 /* Build configuration list for PBXNativeTarget "Transmission Remote" */;
+			buildConfigurationList = 2512295E2B51C1B00079D047 /* Build configuration list for PBXNativeTarget "Transmission" */;
 			buildPhases = (
 				251229352B51C1AE0079D047 /* Sources */,
 				251229362B51C1AE0079D047 /* Frameworks */,
@@ -229,17 +229,17 @@
 			);
 			dependencies = (
 			);
-			name = "Transmission Remote";
+			name = Transmission;
 			packageProductDependencies = (
 				25CAB4792B598CCF00B68F74 /* KeychainSwift */,
 			);
 			productName = Transmission;
-			productReference = 251229392B51C1AE0079D047 /* Transmission Remote.app */;
+			productReference = 251229392B51C1AE0079D047 /* Transmission.app */;
 			productType = "com.apple.product-type.application";
 		};
-		251229492B51C1B00079D047 /* Transmission RemoteTests */ = {
+		251229492B51C1B00079D047 /* TransmissionTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 251229612B51C1B00079D047 /* Build configuration list for PBXNativeTarget "Transmission RemoteTests" */;
+			buildConfigurationList = 251229612B51C1B00079D047 /* Build configuration list for PBXNativeTarget "TransmissionTests" */;
 			buildPhases = (
 				251229462B51C1B00079D047 /* Sources */,
 				251229472B51C1B00079D047 /* Frameworks */,
@@ -250,14 +250,14 @@
 			dependencies = (
 				2512294C2B51C1B00079D047 /* PBXTargetDependency */,
 			);
-			name = "Transmission RemoteTests";
+			name = TransmissionTests;
 			productName = TransmissionTests;
-			productReference = 2512294A2B51C1B00079D047 /* Transmission RemoteTests.xctest */;
+			productReference = 2512294A2B51C1B00079D047 /* TransmissionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		251229532B51C1B00079D047 /* Transmission RemoteUITests */ = {
+		251229532B51C1B00079D047 /* TransmissionUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 251229642B51C1B00079D047 /* Build configuration list for PBXNativeTarget "Transmission RemoteUITests" */;
+			buildConfigurationList = 251229642B51C1B00079D047 /* Build configuration list for PBXNativeTarget "TransmissionUITests" */;
 			buildPhases = (
 				251229502B51C1B00079D047 /* Sources */,
 				251229512B51C1B00079D047 /* Frameworks */,
@@ -268,9 +268,9 @@
 			dependencies = (
 				251229562B51C1B00079D047 /* PBXTargetDependency */,
 			);
-			name = "Transmission RemoteUITests";
+			name = TransmissionUITests;
 			productName = TransmissionUITests;
-			productReference = 251229542B51C1B00079D047 /* Transmission RemoteUITests.xctest */;
+			productReference = 251229542B51C1B00079D047 /* TransmissionUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -296,7 +296,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 251229342B51C1AE0079D047 /* Build configuration list for PBXProject "Transmission Remote" */;
+			buildConfigurationList = 251229342B51C1AE0079D047 /* Build configuration list for PBXProject "Transmission" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -312,9 +312,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				251229382B51C1AE0079D047 /* Transmission Remote */,
-				251229492B51C1B00079D047 /* Transmission RemoteTests */,
-				251229532B51C1B00079D047 /* Transmission RemoteUITests */,
+				251229382B51C1AE0079D047 /* Transmission */,
+				251229492B51C1B00079D047 /* TransmissionTests */,
+				251229532B51C1B00079D047 /* TransmissionUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -386,12 +386,12 @@
 /* Begin PBXTargetDependency section */
 		2512294C2B51C1B00079D047 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 251229382B51C1AE0079D047 /* Transmission Remote */;
+			target = 251229382B51C1AE0079D047 /* Transmission */;
 			targetProxy = 2512294B2B51C1B00079D047 /* PBXContainerItemProxy */;
 		};
 		251229562B51C1B00079D047 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 251229382B51C1AE0079D047 /* Transmission Remote */;
+			target = 251229382B51C1AE0079D047 /* Transmission */;
 			targetProxy = 251229552B51C1B00079D047 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -545,7 +545,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rajlulla.TransmissionRemote;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajlulla.Transmission;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -588,7 +588,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rajlulla.TransmissionRemote;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajlulla.Transmission;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -618,7 +618,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Transmission Remote.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Transmission Remote";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Transmission.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Transmission";
 			};
 			name = Debug;
 		};
@@ -641,7 +641,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Transmission Remote.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Transmission Remote";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Transmission.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Transmission";
 			};
 			name = Release;
 		};
@@ -692,7 +692,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		251229342B51C1AE0079D047 /* Build configuration list for PBXProject "Transmission Remote" */ = {
+		251229342B51C1AE0079D047 /* Build configuration list for PBXProject "Transmission" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2512295C2B51C1B00079D047 /* Debug */,
@@ -701,7 +701,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2512295E2B51C1B00079D047 /* Build configuration list for PBXNativeTarget "Transmission Remote" */ = {
+		2512295E2B51C1B00079D047 /* Build configuration list for PBXNativeTarget "Transmission" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2512295F2B51C1B00079D047 /* Debug */,
@@ -710,7 +710,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		251229612B51C1B00079D047 /* Build configuration list for PBXNativeTarget "Transmission RemoteTests" */ = {
+		251229612B51C1B00079D047 /* Build configuration list for PBXNativeTarget "TransmissionTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				251229622B51C1B00079D047 /* Debug */,
@@ -719,7 +719,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		251229642B51C1B00079D047 /* Build configuration list for PBXNativeTarget "Transmission RemoteUITests" */ = {
+		251229642B51C1B00079D047 /* Build configuration list for PBXNativeTarget "TransmissionUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				251229652B51C1B00079D047 /* Debug */,
