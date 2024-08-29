@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		2512293D2B51C1AE0079D047 /* TransmissionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2512293C2B51C1AE0079D047 /* TransmissionApp.swift */; };
-		2512293F2B51C1AE0079D047 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2512293E2B51C1AE0079D047 /* ContentView.swift */; };
 		251229412B51C1B00079D047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 251229402B51C1B00079D047 /* Assets.xcassets */; };
 		251229452B51C1B00079D047 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 251229442B51C1B00079D047 /* Preview Assets.xcassets */; };
 		2512294F2B51C1B00079D047 /* TransmissionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2512294E2B51C1B00079D047 /* TransmissionTests.swift */; };
 		251229592B51C1B00079D047 /* TransmissionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251229582B51C1B00079D047 /* TransmissionUITests.swift */; };
 		2512295B2B51C1B00079D047 /* TransmissionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2512295A2B51C1B00079D047 /* TransmissionUITestsLaunchTests.swift */; };
+		251229682B51C1F40079D047 /* TorrentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251229672B51C1F40079D047 /* TorrentListView.swift */; };
+		2512296A2B51C20A0079D047 /* Torrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251229692B51C20A0079D047 /* Torrent.swift */; };
+		2512296C2B51C2220079D047 /* TorrentListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2512296B2B51C2220079D047 /* TorrentListCell.swift */; };
+		2512296E2B51C23A0079D047 /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2512296D2B51C23A0079D047 /* Int+Ext.swift */; };
+		255282F72B56F11D00972BC7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255282F62B56F11D00972BC7 /* NetworkManager.swift */; };
+		255282F92B56F92E00972BC7 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255282F82B56F92E00972BC7 /* Alert.swift */; };
+		255282FB2B56FAEE00972BC7 /* TransmissionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255282FA2B56FAEE00972BC7 /* TransmissionError.swift */; };
+		255283042B5700CD00972BC7 /* TorrentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255283032B5700CD00972BC7 /* TorrentListViewModel.swift */; };
+		25C550592B57506700B6F547 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C550582B57506700B6F547 /* SettingsView.swift */; };
+		25CAB47A2B598CCF00B68F74 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 25CAB4792B598CCF00B68F74 /* KeychainSwift */; };
+		25FDFB162B6311F600BCF05C /* TorrentActionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FDFB152B6311F600BCF05C /* TorrentActionModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +46,6 @@
 /* Begin PBXFileReference section */
 		251229392B51C1AE0079D047 /* Transmission.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transmission.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2512293C2B51C1AE0079D047 /* TransmissionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransmissionApp.swift; sourceTree = "<group>"; };
-		2512293E2B51C1AE0079D047 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		251229402B51C1B00079D047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		251229422B51C1B00079D047 /* Transmission.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Transmission.entitlements; sourceTree = "<group>"; };
 		251229442B51C1B00079D047 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +54,16 @@
 		251229542B51C1B00079D047 /* TransmissionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransmissionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		251229582B51C1B00079D047 /* TransmissionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransmissionUITests.swift; sourceTree = "<group>"; };
 		2512295A2B51C1B00079D047 /* TransmissionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransmissionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		251229672B51C1F40079D047 /* TorrentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorrentListView.swift; sourceTree = "<group>"; };
+		251229692B51C20A0079D047 /* Torrent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Torrent.swift; sourceTree = "<group>"; };
+		2512296B2B51C2220079D047 /* TorrentListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorrentListCell.swift; sourceTree = "<group>"; };
+		2512296D2B51C23A0079D047 /* Int+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ext.swift"; sourceTree = "<group>"; };
+		255282F62B56F11D00972BC7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		255282F82B56F92E00972BC7 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		255282FA2B56FAEE00972BC7 /* TransmissionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransmissionError.swift; sourceTree = "<group>"; };
+		255283032B5700CD00972BC7 /* TorrentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorrentListViewModel.swift; sourceTree = "<group>"; };
+		25C550582B57506700B6F547 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		25FDFB152B6311F600BCF05C /* TorrentActionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorrentActionModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25CAB47A2B598CCF00B68F74 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +115,14 @@
 		2512293B2B51C1AE0079D047 /* Transmission */ = {
 			isa = PBXGroup;
 			children = (
-				2512293C2B51C1AE0079D047 /* TransmissionApp.swift */,
-				2512293E2B51C1AE0079D047 /* ContentView.swift */,
+				255282FF2B57002600972BC7 /* Model */,
+				255282FC2B56FFFE00972BC7 /* Utilities */,
+				255283012B57005100972BC7 /* Views */,
 				251229402B51C1B00079D047 /* Assets.xcassets */,
-				251229422B51C1B00079D047 /* Transmission.entitlements */,
 				251229432B51C1B00079D047 /* Preview Content */,
+				251229422B51C1B00079D047 /* Transmission.entitlements */,
+				2512293C2B51C1AE0079D047 /* TransmissionApp.swift */,
+				25C550582B57506700B6F547 /* SettingsView.swift */,
 			);
 			path = Transmission;
 			sourceTree = "<group>";
@@ -129,6 +152,68 @@
 			path = TransmissionUITests;
 			sourceTree = "<group>";
 		};
+		255282FC2B56FFFE00972BC7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				255283002B57003500972BC7 /* Managers */,
+				255282FE2B57001700972BC7 /* Extentions */,
+				255282FD2B57000A00972BC7 /* Alerts */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		255282FD2B57000A00972BC7 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				255282FA2B56FAEE00972BC7 /* TransmissionError.swift */,
+				255282F82B56F92E00972BC7 /* Alert.swift */,
+				25FDFB152B6311F600BCF05C /* TorrentActionModifier.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		255282FE2B57001700972BC7 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				2512296D2B51C23A0079D047 /* Int+Ext.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		255282FF2B57002600972BC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				251229692B51C20A0079D047 /* Torrent.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		255283002B57003500972BC7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				255282F62B56F11D00972BC7 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		255283012B57005100972BC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				255283022B57005D00972BC7 /* TorrentListView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		255283022B57005D00972BC7 /* TorrentListView */ = {
+			isa = PBXGroup;
+			children = (
+				2512296B2B51C2220079D047 /* TorrentListCell.swift */,
+				251229672B51C1F40079D047 /* TorrentListView.swift */,
+				255283032B5700CD00972BC7 /* TorrentListViewModel.swift */,
+			);
+			path = TorrentListView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +230,9 @@
 			dependencies = (
 			);
 			name = Transmission;
+			packageProductDependencies = (
+				25CAB4792B598CCF00B68F74 /* KeychainSwift */,
+			);
 			productName = Transmission;
 			productReference = 251229392B51C1AE0079D047 /* Transmission.app */;
 			productType = "com.apple.product-type.application";
@@ -193,7 +281,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1510;
-				LastUpgradeCheck = 1510;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					251229382B51C1AE0079D047 = {
 						CreatedOnToolsVersion = 15.1;
@@ -217,6 +305,9 @@
 				Base,
 			);
 			mainGroup = 251229302B51C1AE0079D047;
+			packageReferences = (
+				25CAB4782B598CCF00B68F74 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 2512293A2B51C1AE0079D047 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +350,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2512293F2B51C1AE0079D047 /* ContentView.swift in Sources */,
+				255282F72B56F11D00972BC7 /* NetworkManager.swift in Sources */,
+				251229682B51C1F40079D047 /* TorrentListView.swift in Sources */,
+				25FDFB162B6311F600BCF05C /* TorrentActionModifier.swift in Sources */,
+				2512296A2B51C20A0079D047 /* Torrent.swift in Sources */,
+				2512296C2B51C2220079D047 /* TorrentListCell.swift in Sources */,
 				2512293D2B51C1AE0079D047 /* TransmissionApp.swift in Sources */,
+				25C550592B57506700B6F547 /* SettingsView.swift in Sources */,
+				255283042B5700CD00972BC7 /* TorrentListViewModel.swift in Sources */,
+				2512296E2B51C23A0079D047 /* Int+Ext.swift in Sources */,
+				255282FB2B56FAEE00972BC7 /* TransmissionError.swift in Sources */,
+				255282F92B56F92E00972BC7 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +431,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -392,6 +493,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -419,11 +521,14 @@
 				CODE_SIGN_ENTITLEMENTS = Transmission/Transmission.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Transmission/Preview Content\"";
 				DEVELOPMENT_TEAM = 5RN59Y952V;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Transmission Client";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -434,7 +539,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -442,7 +547,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rajlulla.Transmission;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,11 +563,14 @@
 				CODE_SIGN_ENTITLEMENTS = Transmission/Transmission.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Transmission/Preview Content\"";
 				DEVELOPMENT_TEAM = 5RN59Y952V;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Transmission Client";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -472,7 +581,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -480,7 +589,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rajlulla.Transmission;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -490,10 +600,10 @@
 		251229622B51C1B00079D047 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5RN59Y952V;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -513,10 +623,10 @@
 		251229632B51C1B00079D047 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5RN59Y952V;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -536,9 +646,9 @@
 		251229652B51C1B00079D047 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5RN59Y952V;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -558,9 +668,9 @@
 		251229662B51C1B00079D047 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5RN59Y952V;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -617,6 +727,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		25CAB4782B598CCF00B68F74 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 20.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		25CAB4792B598CCF00B68F74 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25CAB4782B598CCF00B68F74 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 251229312B51C1AE0079D047 /* Project object */;
 }
