@@ -12,7 +12,6 @@ struct SettingsView: View {
     let keychain = KeychainSwift()
 
     @State private var rpcURL: String = KeychainSwift().get("rpcURL") ?? ""
-    @State private var useAuth: Bool = KeychainSwift().getBool("useAuth") ?? false
     @State private var username: String = KeychainSwift().get("username") ?? ""
     @State private var password: String = KeychainSwift().get("password") ?? ""
     
@@ -22,16 +21,13 @@ struct SettingsView: View {
     var body: some View {
         Form {
             Section(header: Text("Transmission Settings")) {
-                TextField("RPC URL", text: $rpcURL)
+                TextField("RPC URL - Must be HTTPS", text: $rpcURL)
                     .textInputAutocapitalization(.never)
                     .disableAutocorrection(true)
-                Toggle("Use Authentication", isOn: $useAuth)
-                if useAuth {
-                    TextField("Username", text: $username)
-                        .textInputAutocapitalization(.never)
-                        .disableAutocorrection(true)
-                    SecureField("Password", text: $password)
-                }
+                TextField("Username", text: $username)
+                    .textInputAutocapitalization(.never)
+                    .disableAutocorrection(true)
+                SecureField("Password", text: $password)
                 Button("Save") {
                     saveSettings()
                 }
@@ -42,7 +38,6 @@ struct SettingsView: View {
 
     private func saveSettings() {
         keychain.set(rpcURL, forKey: "rpcURL")
-        keychain.set(useAuth, forKey: "useAuth")
         keychain.set(username, forKey: "username")
         keychain.set(password, forKey: "password")
         showingSettings = false

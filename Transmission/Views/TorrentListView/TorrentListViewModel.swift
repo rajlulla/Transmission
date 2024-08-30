@@ -162,6 +162,9 @@ import Foundation
 
             case .invalidURL:
                 alertItem = AlertContext.invalidURL
+            
+            case .insecureURL:
+                alertItem = AlertContext.insecureURL
 
             case .invalidData:
                 alertItem = AlertContext.invalidData

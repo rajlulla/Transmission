@@ -141,6 +141,12 @@ final class NetworkManager {
             completion(.failure(.invalidURL))
             return
         }
+        
+        // Check if the URL uses HTTP instead of HTTPS
+        if url.scheme == "http" {
+            completion(.failure(.insecureURL)) // Custom error for non-HTTPS URLs
+            return
+        }
 
         // Create Netowrk Request
         var request = URLRequest(url: url)
@@ -150,8 +156,7 @@ final class NetworkManager {
         request.httpBody = bodyData
 
         // Set Authorization header if authentication is needed
-        if keychain.getBool("useAuth") == true,
-           let username = keychain.get("username"),
+        if let username = keychain.get("username"),
            let password = keychain.get("password") {
             let credentials = "\(username):\(password)"
             if let credentialsData = credentials.data(using: .utf8) {

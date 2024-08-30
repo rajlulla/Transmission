@@ -10,6 +10,7 @@ import Foundation
 enum TransmissionError: Error {
     case rpcURLNotSet
     case invalidURL
+    case insecureURL
     case invalidResponse
     case invalidData
     case unableToComplete

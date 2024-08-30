@@ -27,6 +27,9 @@ struct AlertContext {
     static let invalidURL           = AlertItem(title: "Sever Error",
                                                 message: "Invalid URL.")
     
+    static let insecureURL          = AlertItem(title: "Insecure URL",
+                                               message: "Transmission URL must use HTTPS.")
+    
     static let unableToComplete     = AlertItem(title: "Server Error",
                                                 message: "Unable to complete.")
     

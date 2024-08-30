@@ -14,7 +14,7 @@ struct TorrentListView: View {
     
     var body: some View {
         ZStack {
-            NavigationView {
+            NavigationStack {
                 List(viewModel.torrents) { torrent in
                     torrentCellView(for: torrent)
                 }
